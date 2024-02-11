@@ -14,10 +14,14 @@ class HBNBCommand(cmd.Cmd):
     def do_quit(self, line):
         return True
     
+    def help_quit(self, line):
+        print("Quit command to exit the console")
+    
     def emptyline(self):
         pass
     
     def do_EOF(self, line):
+        print()
         return True
         
 if __name__ == "__main__":
